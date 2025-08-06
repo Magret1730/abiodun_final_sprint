@@ -7,3 +7,74 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Primary Colors
+1. Header (Navigation Bar)
+Background: White (#FFFFFF) – clean and modern, keeps focus on products.
+
+Text / Links: Dark Gray (#1F2937) – strong contrast for readability.
+
+Hover / Active Link: Primary Blue (#1E88E5) – gives clear feedback.
+
+Cart Icon Badge: Accent Orange (#FF7043) – stands out immediately.
+
+2. Page Background
+Overall Page: Soft Gray (#F9FAFB) – prevents too much white glare and adds depth behind product cards.
+
+Sections (like footer): Very Light Gray (#F3F4F6) – subtle separation from main content.
+
+3. Product Listing Page (Cards/Grid)
+Card Background: White (#FFFFFF) – ensures product images remain the focus.
+
+Card Border / Shadow: Light Gray (#E5E7EB) or subtle shadow – adds separation between cards.
+
+Product Name: Dark Gray (#111827) – primary text color.
+
+Price: Primary Blue (#1E88E5) – draws attention to cost.
+
+Buttons (Add to Cart / View Details):
+
+Default: Blue background (#1E88E5) with white text (#FFFFFF)
+
+Hover: Slightly darker blue (#1565C0)
+
+4. Product Details Page
+Background: Same as overall page (#F9FAFB).
+
+Price Highlight: Orange (#FF7043) if on sale, otherwise primary blue.
+
+Quantity Selector: White background with gray border (#D1D5DB) and blue button for increment/decrement.
+
+5. Shopping Cart & Checkout Page
+Cart Table Background: White (#FFFFFF)
+
+Total Price Text: Blue (#1E88E5) or Black (#111827) for strong visibility.
+
+Checkout Button: Green (#10B981) – positive action color.
+
+Remove Item Icon: Red (#EF4444) – instantly indicates delete/remove.
+
+6. Footer
+Background: Dark Gray (#1F2937) – visually anchors the page.
+
+Text: White (#FFFFFF) – clean contrast.
+
+Links Hover: Light Blue (#60A5FA) – subtle but noticeable.
+
+Summary of Your Color Scheme:
+
+Primary Action (Buttons, Key Highlights): Blue (#1E88E5)
+
+Attention Grabbers (Sale, Cart Badge): Orange (#FF7043)
+
+Positive/Confirmation (Checkout Success): Green (#10B981)
+
+Error/Warning: Red (#EF4444)
+
+Neutral Backgrounds: White (#FFFFFF) and Light Gray (#F9FAFB)
+*/

@@ -1,20 +1,194 @@
 {
   "products": [
-    { 
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    { 
-      "id": 2,
-      "title": "json",
-      "author": "typ"
-    },
-    { 
-      "id": 3,
-      "title": "server",
-      "author": "code"
-    }
+        {
+          "id": 1,
+          "name": "Wireless Bluetooth Headphones",
+          "price": 79.99,
+          "quantity": 10,
+          "image": "/images/Wireless_Bluetooth_Headphones.avif",
+          "description": "High-quality over-ear Bluetooth headphones with noise cancellation.",
+          "category": "Electronics"
+        },
+        {
+          "id": 2,
+          "name": "Smartwatch Series 5",
+          "price": 199.99,
+          "quantity": 5,
+          "image": "https://via.placeholder.com/200x200?text=Smartwatch",
+          "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
+          "category": "Wearables"
+        },
+        {
+          "id": 3,
+          "name": "Classic Leather Wallet",
+          "price": 49.99,
+          "quantity": 20,
+          "image": "https://via.placeholder.com/200x200?text=Wallet",
+          "description": "Genuine leather wallet with multiple card slots and ID window.",
+          "category": "Accessories"
+        },
+        {
+          "id": 4,
+          "name": "Gaming Laptop 15.6\"",
+          "price": 1299.99,
+          "quantity": 3,
+          "image": "https://via.placeholder.com/200x200?text=Laptop",
+          "description": "High-performance gaming laptop with RTX graphics and 16GB RAM.",
+          "category": "Computers"
+        },
+        {
+          "id": 5,
+          "name": "Running Shoes",
+          "price": 89.99,
+          "quantity": 15,
+          "image": "https://via.placeholder.com/200x200?text=Shoes",
+          "description": "Lightweight running shoes with breathable mesh and cushioned sole.",
+          "category": "Footwear"
+        },
+        {
+          "id": 6,
+          "name": "4K Ultra HD Smart TV",
+          "price": 599.99,
+          "quantity": 2,
+          "image": "https://via.placeholder.com/200x200?text=Smart+TV",
+          "description": "55-inch smart TV with built-in apps and HDR support.",
+          "category": "Electronics"
+        },
+        {
+          "id": 7,
+          "name": "Portable Bluetooth Speaker",
+          "price": 39.99,
+          "quantity": 25,
+          "image": "https://via.placeholder.com/200x200?text=Speaker",
+          "description": "Compact speaker with deep bass and long battery life.",
+          "category": "Electronics"
+        },
+        {
+          "id": 8,
+          "name": "Fitness Tracker Band",
+          "price": 59.99,
+          "quantity": 30,
+          "image": "https://via.placeholder.com/200x200?text=Fitness+Band",
+          "description": "Tracks steps, calories, heart rate, and sleep patterns.",
+          "category": "Wearables"
+        },
+        {
+          "id": 9,
+          "name": "Digital DSLR Camera",
+          "price": 849.99,
+          "quantity": 4,
+          "image": "https://via.placeholder.com/200x200?text=Camera",
+          "description": "Professional camera with 24MP sensor and 4K video recording.",
+          "category": "Electronics"
+        },
+        {
+          "id": 10,
+          "name": "Ergonomic Office Chair",
+          "price": 149.99,
+          "quantity": 8,
+          "image": "https://via.placeholder.com/200x200?text=Chair",
+          "description": "Comfortable chair with lumbar support and adjustable height.",
+          "category": "Furniture"
+        },
+        {
+          "id": 11,
+          "name": "Mechanical Gaming Keyboard",
+          "price": 99.99,
+          "quantity": 12,
+          "image": "https://via.placeholder.com/200x200?text=Keyboard",
+          "description": "RGB backlit mechanical keyboard with anti-ghosting keys.",
+          "category": "Computers"
+        },
+        {
+          "id": 12,
+          "name": "Noise Cancelling Earbuds",
+          "price": 59.99,
+          "quantity": 18,
+          "image": "https://via.placeholder.com/200x200?text=Earbuds",
+          "description": "True wireless earbuds with active noise cancellation.",
+          "category": "Electronics"
+        },
+        {
+          "id": 13,
+          "name": "Electric Kettle",
+          "price": 29.99,
+          "quantity": 22,
+          "image": "https://via.placeholder.com/200x200?text=Kettle",
+          "description": "1.7L stainless steel kettle with auto shut-off feature.",
+          "category": "Home Appliances"
+        },
+        {
+          "id": 14,
+          "name": "Cotton T-Shirt Pack",
+          "price": 25.99,
+          "quantity": 50,
+          "image": "https://via.placeholder.com/200x200?text=T-Shirt",
+          "description": "Pack of 3 soft cotton T-shirts available in multiple colors.",
+          "category": "Clothing"
+        },
+        {
+          "id": 15,
+          "name": "Backpack with Laptop Compartment",
+          "price": 69.99,
+          "quantity": 15,
+          "image": "https://via.placeholder.com/200x200?text=Backpack",
+          "description": "Water-resistant backpack with USB charging port.",
+          "category": "Accessories"
+        },
+        {
+          "id": 16,
+          "name": "Electric Standing Desk",
+          "price": 299.99,
+          "quantity": 6,
+          "image": "https://via.placeholder.com/200x200?text=Desk",
+          "description": "Adjustable height standing desk with dual motors.",
+          "category": "Furniture"
+        },
+        {
+          "id": 17,
+          "name": "Portable External SSD 1TB",
+          "price": 129.99,
+          "quantity": 10,
+          "image": "https://via.placeholder.com/200x200?text=SSD",
+          "description": "High-speed portable SSD with USB-C connection.",
+          "category": "Computers"
+        },
+        {
+          "id": 18,
+          "name": "Air Fryer",
+          "price": 119.99,
+          "quantity": 8,
+          "image": "https://via.placeholder.com/200x200?text=Air+Fryer",
+          "description": "4L air fryer with digital display and 8 preset programs.",
+          "category": "Home Appliances"
+        },
+        {
+          "id": 19,
+          "name": "Stainless Steel Cookware Set",
+          "price": 179.99,
+          "quantity": 5,
+          "image": "https://via.placeholder.com/200x200?text=Cookware",
+          "description": "10-piece cookware set suitable for all stovetops.",
+          "category": "Home Appliances"
+        },
+        {
+          "id": 20,
+          "name": "Wireless Mouse",
+          "price": 19.99,
+          "quantity": 30,
+          "image": "https://via.placeholder.com/200x200?text=Mouse",
+          "description": "Ergonomic wireless mouse with adjustable DPI.",
+          "category": "Computers"
+        },
+        {
+          "id": 21,
+          "name": "Yoga Mat",
+          "price": 29.99,
+          "quantity": 25,
+          "image": "https://via.placeholder.com/200x200?text=Yoga+Mat",
+          "description": "Non-slip yoga mat with extra cushioning for comfort.",
+          "category": "Fitness"
+        }
   ],
   "cart": [
     {
