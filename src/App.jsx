@@ -8,18 +8,14 @@ import Header from './components/Header/Header';
 import About from './components/About/About';
 import Spinner from './components/Spinner/Spinner';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
+import Contact from './components/Contact/Contact';
+import Cart from './pages/CartPage/Cart';
 
 function App() {
   const [products, setProducts] = useState([]);
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  // const [cart, setCart] = useState([]);
-  // const [cartCount, setCartCount] = useState(0);
-  // const [totalPrice, setTotalPrice] = useState(0);
-
-  // const param = useParams();
-  // const id = param.id;
 
   // Toast configuration
   const showToast = (type, message) => {
@@ -90,6 +86,9 @@ function App() {
         <Route path="/" element={ <ProductListings products={products} /> } />
         <Route path="/products/:id" element={ <ProductDetails /> } />
         <Route path="/about" element={ <About /> } />
+        <Route path="/contact" element={ <Contact /> } />
+        <Route path="/cart" element={ <Cart /> } />
+        <Route path="*" element={<h2>Page not found</h2>} />
       </Routes>
       <ToastContainer />
     </>

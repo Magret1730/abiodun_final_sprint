@@ -38,21 +38,21 @@ const ProductDetails = () => {
   }
 
   return (
-    <div>
-      <section className="product-details">
-        <h1 className="product-details__title">Product Details</h1>
-        <p className="product-details__description">Detailed information about the product.</p>
-        <div className="product-details__content">
-          <img src="/images/product_image.jpg" alt="Product" className="product-details__image" />
-          <div className="product-details__info">
-            <h2 className="product-details__name">Product Name</h2>
-            <p className="product-details__price">$99.99</p>
-            <p className="product-details__features">Feature 1, Feature 2, Feature 3</p>
-            <button className="product-details__add-to-cart">Add to Cart</button>
-          </div>
+    <section className="product-details">
+      <h1 className="product-details__title">Product Details</h1>
+      <p className="product-details__description">Detailed information about the product.</p>
+      <div className="product-details__content">
+        <img src={product.image} alt={product.name} className="product-details__image" />
+        <div className="product-details__info">
+          <h2 className="product-details__name">{product.name}</h2>
+          <p className="product-details__price">{product.price}</p>
+          <p className="product-details__description">{product.description}</p>
+          <p className="product-details__quantity">{product.quantity}</p>
+          <p className="product-details__category">{product.category}</p>
+          <button className="product-details__add-to-cart">Add to Cart</button>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 
