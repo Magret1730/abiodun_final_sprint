@@ -59,7 +59,7 @@
       "name": "Portable Bluetooth Speaker",
       "price": 39.99,
       "quantity": 25,
-      "image": "https://via.placeholder.com/200x200?text=Speaker",
+      "image": "/images/Portable_Bluetooth_Speaker.avif",
       "description": "Compact speaker with deep bass and long battery life.",
       "category": "Electronics"
     },
@@ -68,7 +68,7 @@
       "name": "Fitness Tracker Band",
       "price": 59.99,
       "quantity": 30,
-      "image": "https://via.placeholder.com/200x200?text=Fitness+Band",
+      "image": "/images/Fitness_Tracker_Band.avif",
       "description": "Tracks steps, calories, heart rate, and sleep patterns.",
       "category": "Wearables"
     },
@@ -77,7 +77,7 @@
       "name": "Digital DSLR Camera",
       "price": 849.99,
       "quantity": 4,
-      "image": "https://via.placeholder.com/200x200?text=Camera",
+      "image": "/images/Digital_DSLR_Camera.avif",
       "description": "Professional camera with 24MP sensor and 4K video recording.",
       "category": "Electronics"
     },
@@ -86,7 +86,7 @@
       "name": "Ergonomic Office Chair",
       "price": 149.99,
       "quantity": 8,
-      "image": "https://via.placeholder.com/200x200?text=Chair",
+      "image": "/images/Ergonomic_Office_Chair.avif",
       "description": "Comfortable chair with lumbar support and adjustable height.",
       "category": "Furniture"
     },
@@ -95,7 +95,7 @@
       "name": "Mechanical Gaming Keyboard",
       "price": 99.99,
       "quantity": 12,
-      "image": "https://via.placeholder.com/200x200?text=Keyboard",
+      "image": "/images/Mechanical_Gaming_Keyboard.avif",
       "description": "RGB backlit mechanical keyboard with anti-ghosting keys.",
       "category": "Computers"
     },
@@ -104,7 +104,7 @@
       "name": "Noise Cancelling Earbuds",
       "price": 59.99,
       "quantity": 18,
-      "image": "https://via.placeholder.com/200x200?text=Earbuds",
+      "image": "/images/Noise_Cancelling_Earbuds.avif",
       "description": "True wireless earbuds with active noise cancellation.",
       "category": "Electronics"
     },
@@ -113,7 +113,7 @@
       "name": "Electric Kettle",
       "price": 29.99,
       "quantity": 22,
-      "image": "https://via.placeholder.com/200x200?text=Kettle",
+      "image": "/images/Electric_Kettle.avif",
       "description": "1.7L stainless steel kettle with auto shut-off feature.",
       "category": "Home Appliances"
     },
@@ -122,7 +122,7 @@
       "name": "Cotton T-Shirt Pack",
       "price": 25.99,
       "quantity": 50,
-      "image": "https://via.placeholder.com/200x200?text=T-Shirt",
+      "image": "/images/Cotton_T-Shirt_Pack.avif",
       "description": "Pack of 3 soft cotton T-shirts available in multiple colors.",
       "category": "Clothing"
     },
@@ -131,7 +131,7 @@
       "name": "Backpack with Laptop Compartment",
       "price": 69.99,
       "quantity": 15,
-      "image": "https://via.placeholder.com/200x200?text=Backpack",
+      "image": "/images/Backpack_with_Laptop_Compartment.avif",
       "description": "Water-resistant backpack with USB charging port.",
       "category": "Accessories"
     },
@@ -140,7 +140,7 @@
       "name": "Electric Standing Desk",
       "price": 299.99,
       "quantity": 6,
-      "image": "https://via.placeholder.com/200x200?text=Desk",
+      "image": "/images/Electric_Standing_Desk.avif",
       "description": "Adjustable height standing desk with dual motors.",
       "category": "Furniture"
     },
@@ -149,7 +149,7 @@
       "name": "Portable External SSD 1TB",
       "price": 129.99,
       "quantity": 10,
-      "image": "https://via.placeholder.com/200x200?text=SSD",
+      "image": "/images/Portable_External_SSD_1TB.avif",
       "description": "High-speed portable SSD with USB-C connection.",
       "category": "Computers"
     },
@@ -158,7 +158,7 @@
       "name": "Air Fryer",
       "price": 119.99,
       "quantity": 8,
-      "image": "https://via.placeholder.com/200x200?text=Air+Fryer",
+      "image": "/images/Air_Fryer.avif",
       "description": "4L air fryer with digital display and 8 preset programs.",
       "category": "Home Appliances"
     },
@@ -167,7 +167,7 @@
       "name": "Stainless Steel Cookware Set",
       "price": 179.99,
       "quantity": 5,
-      "image": "https://via.placeholder.com/200x200?text=Cookware",
+      "image": "/images/Stainless_Steel_Cookware_Set.avif",
       "description": "10-piece cookware set suitable for all stovetops.",
       "category": "Home Appliances"
     },
@@ -176,7 +176,7 @@
       "name": "Wireless Mouse",
       "price": 19.99,
       "quantity": 30,
-      "image": "https://via.placeholder.com/200x200?text=Mouse",
+      "image": "/images/Wireless_Mouse.avif",
       "description": "Ergonomic wireless mouse with adjustable DPI.",
       "category": "Computers"
     },
@@ -185,7 +185,7 @@
       "name": "Yoga Mat",
       "price": 29.99,
       "quantity": 25,
-      "image": "https://via.placeholder.com/200x200?text=Yoga+Mat",
+      "image": "/images/Yoga_Mat.avif",
       "description": "Non-slip yoga mat with extra cushioning for comfort.",
       "category": "Fitness"
     }
@@ -195,33 +195,19 @@
       "id": "2",
       "name": "Smartwatch Series 5",
       "price": 199.99,
+      "quantity": 2,
       "image": "/images/Smartwatch_Series_5.avif",
       "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
-      "quantity": 5
+      "category": "Wearables"
     },
     {
-      "id": "1",
-      "name": "Wireless Bluetooth Headphones",
-      "price": 79.99,
-      "image": "/images/Wireless_Bluetooth_Headphones.avif",
-      "description": "High-quality over-ear Bluetooth headphones with noise cancellation.",
-      "quantity": 10
-    },
-    {
-      "id": "2",
-      "name": "Smartwatch Series 5",
-      "price": 199.99,
-      "image": "/images/Smartwatch_Series_5.avif",
-      "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
-      "quantity": 5
-    },
-    {
-      "id": "1",
-      "name": "Wireless Bluetooth Headphones",
-      "price": 79.99,
-      "image": "/images/Wireless_Bluetooth_Headphones.avif",
-      "description": "High-quality over-ear Bluetooth headphones with noise cancellation.",
-      "quantity": 10
+      "id": "3",
+      "name": "Classic Leather Wallet",
+      "price": 49.99,
+      "quantity": 3,
+      "image": "/images/Classic_Leather_Wallet.avif",
+      "description": "Genuine leather wallet with multiple card slots and ID window.",
+      "category": "Accessories"
     }
   ]
 }

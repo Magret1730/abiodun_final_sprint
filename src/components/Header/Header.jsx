@@ -2,29 +2,10 @@ import React from 'react';
 import "./Header.css";
 import { NavLink } from 'react-router-dom';
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { useContext, useEffect, useState } from 'react';
+import { useCart } from "../../context/Cart";
 
 const Header = () => {
-  const [counterLength, setCounterLength] = useState(0);
-
-
-  useEffect(() => {
-  // Fetch the cart items from the server
-  const fetchCartItems = async () => {
-    try {
-    const res = await fetch(`http://localhost:3001/cart`);
-
-    const data = await res.json();
-
-    setCounterLength(data.length);
-
-    } catch (error) {
-    console.error("Error fetching cart items:", error);
-    }
-  };
-
-  fetchCartItems();
-  }, []);
+  const { items } = useCart();
 
   return (
 	<header className="header">
@@ -36,7 +17,6 @@ const Header = () => {
 		</div>
 
 		<div className="header__nav">
-			{/* <NavLink to="/" className="header__link">Home</NavLink> */}
 			<NavLink to="/" className="header__link">Products</NavLink>
 			<NavLink to="/about" className="header__link">About</NavLink>
 			<NavLink to="/contact" className="header__link">Contact</NavLink>
@@ -47,7 +27,7 @@ const Header = () => {
 				<span className="header__cart-icon">
 					<AiOutlineShoppingCart className='header__cart-icons'/>
 				</span>
-				<span className="header__cart-count">{counterLength}</span>
+				<span className="header__cart-count">{items.length}</span>
 			</NavLink>
 		</div>
 	</header>

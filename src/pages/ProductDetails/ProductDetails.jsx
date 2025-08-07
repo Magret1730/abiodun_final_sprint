@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./ProductDetails.css";
 import { useParams } from 'react-router-dom';
 import Spinner from "../../components/Spinner/Spinner";
+import { useCart } from "../../context/Cart";
 
 const ProductDetails = () => {
   const [product, setProduct] = useState(null);
@@ -10,13 +11,18 @@ const ProductDetails = () => {
 
   const { id } = useParams();
   const newId = Number(id);
-  console.log("product", product);
+
+  const { addItem } = useCart();
+
+  const handleAddToCart = () => {
+    addItem(product);
+  };
 
   useEffect(() => {
     const fetchProduct = async () => {
       try {
         const res = await fetch(`http://localhost:3001/products/${newId}`);
-        console.log(res, "res");
+        // console.log(res, "res");
         if (!res.ok) throw new Error("Failed to fetch");
         const data = await res.json();
         setProduct(data);
@@ -49,7 +55,7 @@ const ProductDetails = () => {
           <p className="product-details__description">{product.description}</p>
           <p className="product-details__quantity">{product.quantity}</p>
           <p className="product-details__category">{product.category}</p>
-          <button className="product-details__add-to-cart">Add to Cart</button>
+          <button onClick={handleAddToCart} className="product-details__add-to-cart">Add to Cart</button>
         </div>
       </div>
     </section>
