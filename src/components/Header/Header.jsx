@@ -2,7 +2,7 @@ import React from 'react';
 import "./Header.css";
 import { NavLink } from 'react-router-dom';
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { useCart } from "../../context/Cart";
+import { useCart } from "../../context/CartContext";
 
 const Header = () => {
   const { items } = useCart();

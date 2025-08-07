@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./ProductDetails.css";
 import { useParams } from 'react-router-dom';
 import Spinner from "../../components/Spinner/Spinner";
-import { useCart } from "../../context/Cart";
+import { useCart } from "../../context/CartContext";
 
 const ProductDetails = () => {
   const [product, setProduct] = useState(null);

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useCart } from "../../context/Cart";
+import { useCart } from "../../context/CartContext";
 import "./ProductListing.css";
 
 const ProductListing = ({ product }) => {

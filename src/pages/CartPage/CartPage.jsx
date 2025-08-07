@@ -1,6 +1,6 @@
 // src/pages/CartPage/CartPage.jsx
 import React from "react";
-import { useCart } from "../../context/Cart";
+import { useCart } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import { AiOutlineDelete } from "react-icons/ai";
 import Spinner from "../../components/Spinner/Spinner";
@@ -32,7 +32,7 @@ const CartPage = () => {
       const product = await resProduct.json();
   
       if (product.quantity <= 0) {
-        toast.error("Out of stock");
+        toast.error(`${product.name} is out of stock`);
         return;
       }
   
