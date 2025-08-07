@@ -10,10 +10,10 @@ import Spinner from './components/Spinner/Spinner';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
 import Contact from './components/Contact/Contact';
 import CartPage from './pages/CartPage/CartPage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [products, setProducts] = useState([]);
-  // const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -50,22 +50,11 @@ function App() {
     return data;
   };
 
-  // Fetch product
-  // const fetchProduct = async (id) => {
-  //   const res = await fetch(`http://localhost:3001/products/${id}`);
-  //   if (!res.ok) throw new Error("Network response was not ok");
-
-  //   const data = await res.json();
-  //   return data;
-  // };
-
   useEffect(() => {
     const getProducts = async () => {
       try {
         const productsFromServer = await fetchProducts();
-        // const productFromServer = await fetchProduct(id);
         setProducts(productsFromServer);
-        // setProduct(productFromServer);
         setLoading(false);
       } catch (error) {
         setError("Failed to fetch products");
@@ -92,6 +81,7 @@ function App() {
         <Route path="/cart" element={ <CartPage /> } />
         <Route path="*" element={<h2>Page not found</h2>} />
       </Routes>
+      <Footer />
       <ToastContainer />
     </>
   )

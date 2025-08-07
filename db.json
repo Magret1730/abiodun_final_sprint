@@ -13,7 +13,7 @@
       "id": "2",
       "name": "Smartwatch Series 5",
       "price": 199.99,
-      "quantity": 5,
+      "quantity": 1,
       "image": "/images/Smartwatch_Series_5.avif",
       "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
       "category": "Wearables"
@@ -22,7 +22,7 @@
       "id": "3",
       "name": "Classic Leather Wallet",
       "price": 49.99,
-      "quantity": 20,
+      "quantity": 21,
       "image": "/images/Classic_Leather_Wallet.avif",
       "description": "Genuine leather wallet with multiple card slots and ID window.",
       "category": "Accessories"
@@ -49,7 +49,7 @@
       "id": "6",
       "name": "4K Ultra HD Smart TV",
       "price": 599.99,
-      "quantity": 2,
+      "quantity": 8,
       "image": "/images/4K_Ultra_HD_Smart_TV.avif",
       "description": "55-inch smart TV with built-in apps and HDR support.",
       "category": "Electronics"
@@ -195,19 +195,18 @@
       "id": "2",
       "name": "Smartwatch Series 5",
       "price": 199.99,
-      "quantity": 2,
+      "quantity": 1,
       "image": "/images/Smartwatch_Series_5.avif",
       "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
       "category": "Wearables"
-    },
+    }
+  ],
+  "contact": [
     {
-      "id": "3",
-      "name": "Classic Leather Wallet",
-      "price": 49.99,
-      "quantity": 3,
-      "image": "/images/Classic_Leather_Wallet.avif",
-      "description": "Genuine leather wallet with multiple card slots and ID window.",
-      "category": "Accessories"
+      "id": "3726",
+      "name": "huyg",
+      "email": "hjy",
+      "message": "hytg"
     }
   ]
 }

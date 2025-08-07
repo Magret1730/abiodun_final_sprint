@@ -14,25 +14,28 @@ const ProductDetails = () => {
 
   const { addItem } = useCart();
 
-  const handleAddToCart = () => {
-    addItem(product);
+  const fetchProduct = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch(`http://localhost:3001/products/${newId}`);
+      if (!res.ok) throw new Error("Failed to fetch");
+      const data = await res.json();
+      setProduct(data);
+      setError(null);
+    } catch (err) {
+      console.error(err);
+      setError("Failed to fetch product");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleAddToCart = async () => {
+    await addItem(product);
+    fetchProduct(); // Refetch product after update
   };
 
   useEffect(() => {
-    const fetchProduct = async () => {
-      try {
-        const res = await fetch(`http://localhost:3001/products/${newId}`);
-        // console.log(res, "res");
-        if (!res.ok) throw new Error("Failed to fetch");
-        const data = await res.json();
-        setProduct(data);
-      } catch (err) {
-        setError("Failed to fetch product");
-      } finally {
-        setLoading(false);
-      }
-    };
-
     fetchProduct();
   }, [id]);
 

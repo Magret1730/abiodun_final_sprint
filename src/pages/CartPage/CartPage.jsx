@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineDelete } from "react-icons/ai";
 import Spinner from "../../components/Spinner/Spinner";
 import "./CartPage.css";
+import { toast } from "react-toastify";
 
 const CartPage = () => {
   const { items, loading, removeItem, clearCart } = useCart();
@@ -22,6 +23,63 @@ const CartPage = () => {
         </Link>
       </div>
     );
+
+    const incrementQuantity = async (item) => {
+      const resProduct = await fetch(`http://localhost:3001/products/${item.id}`);
+      const product = await resProduct.json();
+  
+      if (product.quantity <= 0) {
+        toast.error("Out of stock");
+        return;
+      }
+  
+      const updatedCartItem = { ...item, quantity: item.quantity + 1 };
+  
+      // Update cart
+      await fetch(`http://localhost:3001/cart/${item.id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedCartItem),
+      });
+  
+      // Decrease stock
+      await fetch(`http://localhost:3001/products/${item.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ quantity: product.quantity - 1 }),
+      });
+  
+      window.location.reload(); // refetches  update
+    };
+  
+    const decrementQuantity = async (item) => {
+      if (item.quantity === 1) {
+        await removeItem(item.id);
+        return;
+      }
+  
+      const resProduct = await fetch(`http://localhost:3001/products/${item.id}`);
+      const product = await resProduct.json();
+  
+      const updatedCartItem = { ...item, quantity: item.quantity - 1 };
+  
+      // Update cart
+      await fetch(`http://localhost:3001/cart/${item.id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedCartItem),
+      });
+  
+      // Increase stock
+      await fetch(`http://localhost:3001/products/${item.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ quantity: product.quantity + 1 }),
+      });
+  
+      window.location.reload(); // refetches update
+    };
+  
 
   return (
     <div className="cart">
@@ -45,7 +103,13 @@ const CartPage = () => {
                 </Link>
                 <span>{item.name}</span>
               </td>
-              <td>{item.quantity}</td>
+              <td>
+                <div className="cart__qty-controls">
+                  <button className="cart__addsub-button" onClick={() => decrementQuantity(item)}>-</button>
+                  <span>{item.quantity}</span>
+                  <button className="cart__addsub-button" onClick={() => incrementQuantity(item)}>+</button>
+                </div>
+              </td>
               <td>${item.price.toFixed(2)}</td>
               <td>${(item.price * item.quantity).toFixed(2)}</td>
               <td>

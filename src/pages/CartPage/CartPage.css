@@ -37,6 +37,38 @@
   .cart__item-name {
     vertical-align: middle;
   }
+
+  .cart__qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .cart__qty-controls button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  .cart__qty-controls button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+  }
+  
+  .cart__qty-controls span {
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 24px;
+    text-align: center;
+  }
+  
   
   .cart__remove-button {
     background: none;
