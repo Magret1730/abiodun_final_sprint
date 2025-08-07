@@ -1,0 +1,59 @@
+.checkout-page {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  
+  .checkout-table th,
+  .checkout-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .checkout-total {
+    text-align: right;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .checkout-actions {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .proceed-btn,
+  .cancel-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .proceed-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  

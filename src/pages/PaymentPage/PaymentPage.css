@@ -1,0 +1,57 @@
+.payment-page {
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+  }
+  
+  .payment-page h2,
+  .payment-page h3 {
+    text-align: center;
+  }
+
+  .order-summary {
+    margin-bottom: 2rem;
+  }
+  
+  .order-summary ul {
+    padding: 0;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .payment-form input {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .payment-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .pay-btn,
+  .cancel-btn {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pay-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background: #dc3545;
+    color: white;
+  }
+  

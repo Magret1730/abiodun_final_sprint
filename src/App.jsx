@@ -11,6 +11,8 @@ import ProductDetails from './pages/ProductDetails/ProductDetails';
 import Contact from './components/Contact/Contact';
 import CartPage from './pages/CartPage/CartPage';
 import Footer from './components/Footer/Footer';
+import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
+import PaymentPage from './pages/PaymentPage/PaymentPage';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -79,6 +81,8 @@ function App() {
         <Route path="/about" element={ <About /> } />
         <Route path="/contact" element={ <Contact /> } />
         <Route path="/cart" element={ <CartPage /> } />
+        <Route path="/checkout" element={ <CheckoutPage /> } />
+        <Route path="/payment" element={ <PaymentPage /> } />
         <Route path="*" element={<h2>Page not found</h2>} />
       </Routes>
       <Footer />

@@ -14,6 +14,7 @@ const ProductDetails = () => {
 
   const { addItem } = useCart();
 
+  // Fetch product details from backend
   const fetchProduct = async () => {
     setLoading(true);
     try {
@@ -30,6 +31,7 @@ const ProductDetails = () => {
     }
   };
 
+  // Handle adding product to cart
   const handleAddToCart = async () => {
     await addItem(product);
     fetchProduct(); // Refetch product after update

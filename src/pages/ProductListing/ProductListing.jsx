@@ -6,6 +6,7 @@ import "./ProductListing.css";
 const ProductListing = ({ product }) => {
   const { addItem } = useCart();
 
+  // Function to handle adding product to cart
   const handleAddToCart = () => {
     addItem(product);
   };

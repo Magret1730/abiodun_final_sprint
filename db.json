@@ -13,7 +13,7 @@
       "id": "2",
       "name": "Smartwatch Series 5",
       "price": 199.99,
-      "quantity": 1,
+      "quantity": 3,
       "image": "/images/Smartwatch_Series_5.avif",
       "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
       "category": "Wearables"
@@ -121,7 +121,7 @@
       "id": "14",
       "name": "Cotton T-Shirt Pack",
       "price": 25.99,
-      "quantity": 50,
+      "quantity": 49,
       "image": "/images/Cotton_T-Shirt_Pack.avif",
       "description": "Pack of 3 soft cotton T-shirts available in multiple colors.",
       "category": "Clothing"
@@ -190,23 +190,47 @@
       "category": "Fitness"
     }
   ],
-  "cart": [
-    {
-      "id": "2",
-      "name": "Smartwatch Series 5",
-      "price": 199.99,
-      "quantity": 1,
-      "image": "/images/Smartwatch_Series_5.avif",
-      "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
-      "category": "Wearables"
-    }
-  ],
+  "cart": [],
   "contact": [
     {
       "id": "3726",
       "name": "huyg",
       "email": "hjy",
       "message": "hytg"
+    }
+  ],
+  "paymentDetails": [
+    {
+      "id": "0261",
+      "name": "fre",
+      "cardNumber": "123",
+      "expiry": "12rr",
+      "cvv": "343",
+      "amount": 129.98
+    },
+    {
+      "id": "a509",
+      "name": "fre",
+      "cardNumber": "123",
+      "expiry": "12rr",
+      "cvv": "343",
+      "amount": 129.98
+    },
+    {
+      "id": "f9c9",
+      "name": "dddd",
+      "cardNumber": "dddd",
+      "expiry": "dddd",
+      "cvv": "ddd",
+      "amount": 129.98
+    },
+    {
+      "id": "d110",
+      "name": "ff",
+      "cardNumber": "fff",
+      "expiry": "fff",
+      "cvv": "fff",
+      "amount": 51.98
     }
   ]
 }

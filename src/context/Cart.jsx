@@ -103,7 +103,7 @@ export const CartProvider = ({ children }) => {
     }
   };  
 
-  // Clear entire cart
+  // Clears entire cart and restock
   const clearCart = async () => {
     try {
       // Update stock quantity back for each product in cart
@@ -121,25 +121,42 @@ export const CartProvider = ({ children }) => {
         });
       });
   
-      // Wait for all stock updates
+      // Waits for all stock updates
       await Promise.all(updateStockPromises);
   
-      // Now delete all cart items
+      // Deletes all cart items
       const deletePromises = items.map((item) =>
         fetch(`http://localhost:3001/cart/${item.id}`, { method: "DELETE" })
       );
       await Promise.all(deletePromises);
   
       setItems([]);
-      toast.info("Cart cleared and product stock restored");
+      // toast.info("Cart cleared and product stock restored");
+      toast.info("Cart cleared");
     } catch (err) {
       console.error(err);
       toast.error("Failed to clear cart and restore stock");
     }
   };
 
+  // Clears cart with restocking
+  const clearCartWithoutRestocking = async () => {
+    try {
+      // Deletes all cart items without updating stock
+      const deletePromises = items.map((item) =>
+        fetch(`http://localhost:3001/cart/${item.id}`, { method: "DELETE" })
+      );
+      await Promise.all(deletePromises);
+
+      setItems([]);
+    } catch (err) {
+      console.error(err);
+      toast.error("Failed to clear cart");
+    }
+  };
+
   return (
-    <CartContext.Provider value={{ items, loading, addItem, removeItem, clearCart }}>
+    <CartContext.Provider value={{ items, loading, addItem, removeItem, clearCart, clearCartWithoutRestocking }}>
       {children}
     </CartContext.Provider>
   );

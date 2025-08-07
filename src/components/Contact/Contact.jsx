@@ -10,11 +10,14 @@ const Contact = () => {
 
   const handleSendMessage = async (e) => {
     e.preventDefault();
+
+    // Validate form fields
     if (!name || !email || !message) {
       toast.error("Please fill in all fields");
       return;
     }
 
+    // Process contact logic
     try {
       const response = await fetch("http://localhost:3001/contact", {
         method: "POST",
@@ -30,6 +33,8 @@ const Contact = () => {
 
       const data = await response.json();
       toast.success("Message sent successfully!");
+
+      // Clear form fields after successful submission
       setName("");
       setEmail("");
       setMessage("");

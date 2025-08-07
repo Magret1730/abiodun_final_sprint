@@ -27,6 +27,8 @@ const Header = () => {
 				<span className="header__cart-icon">
 					<AiOutlineShoppingCart className='header__cart-icons'/>
 				</span>
+
+				{/* Display the number of items in the cart */}
 				<span className="header__cart-count">{items.length}</span>
 			</NavLink>
 		</div>

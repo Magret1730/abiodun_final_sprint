@@ -10,10 +10,12 @@ import { toast } from "react-toastify";
 const CartPage = () => {
   const { items, loading, removeItem, clearCart } = useCart();
 
+  // Calculate total price
   const totalPrice = items.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
 
   if (loading) return <Spinner loading={loading} />;
 
+  // If cart is empty, show empty message
   if (items.length === 0)
     return (
       <div className="cart__empty">
@@ -24,6 +26,7 @@ const CartPage = () => {
       </div>
     );
 
+    // Function to increment item quantity
     const incrementQuantity = async (item) => {
       const resProduct = await fetch(`http://localhost:3001/products/${item.id}`);
       const product = await resProduct.json();
@@ -52,6 +55,7 @@ const CartPage = () => {
       window.location.reload(); // refetches  update
     };
   
+    // Function to decrement item quantity
     const decrementQuantity = async (item) => {
       if (item.quantity === 1) {
         await removeItem(item.id);
@@ -124,9 +128,14 @@ const CartPage = () => {
 
       <div className="cart__checkout">
         <p>Total: ${totalPrice}</p>
-        <button onClick={clearCart} className="cart__clear-button">
-          Clear Cart
-        </button>
+        <div className="cart__actions">
+          <button onClick={clearCart} className="cart__clear-button">
+            Clear Cart
+          </button>
+          <Link to="/checkout" className="cart__checkout-button">
+            Checkout
+          </Link>
+        </div>
       </div>
     </div>
   );
