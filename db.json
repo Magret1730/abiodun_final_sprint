@@ -13,7 +13,7 @@
       "id": "2",
       "name": "Smartwatch Series 5",
       "price": 199.99,
-      "quantity": 8,
+      "quantity": 7,
       "image": "/images/Smartwatch_Series_5.avif",
       "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
       "category": "Wearables"
@@ -190,7 +190,17 @@
       "category": "Fitness"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "2",
+      "name": "Smartwatch Series 5",
+      "price": 199.99,
+      "quantity": 1,
+      "image": "/images/Smartwatch_Series_5.avif",
+      "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
+      "category": "Wearables"
+    }
+  ],
   "contact": [
     {
       "id": "3726",
