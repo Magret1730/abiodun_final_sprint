@@ -13,7 +13,7 @@
       "id": "2",
       "name": "Smartwatch Series 5",
       "price": 199.99,
-      "quantity": 3,
+      "quantity": 8,
       "image": "/images/Smartwatch_Series_5.avif",
       "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
       "category": "Wearables"
@@ -31,7 +31,7 @@
       "id": "4",
       "name": "Gaming Laptop 15.6\"",
       "price": 1299.99,
-      "quantity": 3,
+      "quantity": 30,
       "image": "/images/Gaming_Laptop_15.6.jpg",
       "description": "High-performance gaming laptop with RTX graphics and 16GB RAM.",
       "category": "Computers"
@@ -76,7 +76,7 @@
       "id": "9",
       "name": "Digital DSLR Camera",
       "price": 849.99,
-      "quantity": 4,
+      "quantity": 40,
       "image": "/images/Digital_DSLR_Camera.avif",
       "description": "Professional camera with 24MP sensor and 4K video recording.",
       "category": "Electronics"
@@ -85,7 +85,7 @@
       "id": "10",
       "name": "Ergonomic Office Chair",
       "price": 149.99,
-      "quantity": 8,
+      "quantity": 7,
       "image": "/images/Ergonomic_Office_Chair.avif",
       "description": "Comfortable chair with lumbar support and adjustable height.",
       "category": "Furniture"
@@ -121,7 +121,7 @@
       "id": "14",
       "name": "Cotton T-Shirt Pack",
       "price": 25.99,
-      "quantity": 49,
+      "quantity": 48,
       "image": "/images/Cotton_T-Shirt_Pack.avif",
       "description": "Pack of 3 soft cotton T-shirts available in multiple colors.",
       "category": "Clothing"
@@ -157,7 +157,7 @@
       "id": "18",
       "name": "Air Fryer",
       "price": 119.99,
-      "quantity": 8,
+      "quantity": 18,
       "image": "/images/Air_Fryer.avif",
       "description": "4L air fryer with digital display and 8 preset programs.",
       "category": "Home Appliances"
@@ -166,7 +166,7 @@
       "id": "19",
       "name": "Stainless Steel Cookware Set",
       "price": 179.99,
-      "quantity": 5,
+      "quantity": 25,
       "image": "/images/Stainless_Steel_Cookware_Set.avif",
       "description": "10-piece cookware set suitable for all stovetops.",
       "category": "Home Appliances"
@@ -207,30 +207,6 @@
       "expiry": "12rr",
       "cvv": "343",
       "amount": 129.98
-    },
-    {
-      "id": "a509",
-      "name": "fre",
-      "cardNumber": "123",
-      "expiry": "12rr",
-      "cvv": "343",
-      "amount": 129.98
-    },
-    {
-      "id": "f9c9",
-      "name": "dddd",
-      "cardNumber": "dddd",
-      "expiry": "dddd",
-      "cvv": "ddd",
-      "amount": 129.98
-    },
-    {
-      "id": "d110",
-      "name": "ff",
-      "cardNumber": "fff",
-      "expiry": "fff",
-      "cvv": "fff",
-      "amount": 51.98
     }
   ]
 }

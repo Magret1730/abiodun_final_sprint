@@ -83,7 +83,7 @@ const PaymentPage = () => {
             </li>
           ))}
         </ul>
-        <p><strong>Total:</strong> ${totalAmount()}</p>
+        <p><strong>Total:</strong> ${totalAmount().toFixed(2)}</p>
       </section>
 
       <form onSubmit={handlePayment} className="payment-form">
