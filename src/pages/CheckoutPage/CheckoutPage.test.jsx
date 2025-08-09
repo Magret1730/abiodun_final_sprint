@@ -14,7 +14,7 @@ vi.mock("../../context/CartContext", () => ({
 
 describe("CheckoutPage", () => {
   beforeEach(() => {
-    // Clear previous mock calls and implementations before each test
+    // Clears previous mock calls and implementations before each test
     mockUseCart.mockReset();
   });
 

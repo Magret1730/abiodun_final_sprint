@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 const CartPage = () => {
   const { items, loading, removeItem, clearCart } = useCart();
 
-  // Calculate total price
+  // Calculates total price
   const totalPrice = items.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
 
   if (loading) return <Spinner loading={loading} />;

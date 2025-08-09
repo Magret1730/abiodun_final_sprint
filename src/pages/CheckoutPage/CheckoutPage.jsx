@@ -5,10 +5,9 @@ import "./CheckoutPage.css";
 
 const CheckoutPage = () => {
   const { items } = useCart();
-  console.log(items)
   const navigate = useNavigate();
 
-  // Calculate total amount
+  // Calculates total amount
   const totalAmount = items.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
