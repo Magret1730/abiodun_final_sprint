@@ -5,6 +5,10 @@
     padding: 16px 48px 16px;
     background-color: white;
     color: #1F2937;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .header__logo-link {
     display: flex;

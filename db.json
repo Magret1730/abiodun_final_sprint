@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Wireless Bluetooth Headphones",
       "price": 79.99,
-      "quantity": 10,
+      "quantity": 9,
       "image": "/images/Wireless_Bluetooth_Headphones.avif",
       "description": "High-quality over-ear Bluetooth headphones with noise cancellation.",
       "category": "Electronics"
@@ -13,7 +13,7 @@
       "id": "2",
       "name": "Smartwatch Series 5",
       "price": 199.99,
-      "quantity": 7,
+      "quantity": 3,
       "image": "/images/Smartwatch_Series_5.avif",
       "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
       "category": "Wearables"
@@ -85,7 +85,7 @@
       "id": "10",
       "name": "Ergonomic Office Chair",
       "price": 149.99,
-      "quantity": 7,
+      "quantity": 6,
       "image": "/images/Ergonomic_Office_Chair.avif",
       "description": "Comfortable chair with lumbar support and adjustable height.",
       "category": "Furniture"
@@ -166,7 +166,7 @@
       "id": "19",
       "name": "Stainless Steel Cookware Set",
       "price": 179.99,
-      "quantity": 25,
+      "quantity": 24,
       "image": "/images/Stainless_Steel_Cookware_Set.avif",
       "description": "10-piece cookware set suitable for all stovetops.",
       "category": "Home Appliances"
@@ -175,7 +175,7 @@
       "id": "20",
       "name": "Wireless Mouse",
       "price": 19.99,
-      "quantity": 30,
+      "quantity": 29,
       "image": "/images/Wireless_Mouse.avif",
       "description": "Ergonomic wireless mouse with adjustable DPI.",
       "category": "Computers"
@@ -192,10 +192,19 @@
   ],
   "cart": [
     {
+      "id": "1",
+      "name": "Wireless Bluetooth Headphones",
+      "price": 79.99,
+      "quantity": 1,
+      "image": "/images/Wireless_Bluetooth_Headphones.avif",
+      "description": "High-quality over-ear Bluetooth headphones with noise cancellation.",
+      "category": "Electronics"
+    },
+    {
       "id": "2",
       "name": "Smartwatch Series 5",
       "price": 199.99,
-      "quantity": 1,
+      "quantity": 6,
       "image": "/images/Smartwatch_Series_5.avif",
       "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
       "category": "Wearables"
@@ -217,6 +226,14 @@
       "expiry": "12rr",
       "cvv": "343",
       "amount": 129.98
+    },
+    {
+      "id": "39d4",
+      "name": "ghy",
+      "cardNumber": "swe",
+      "expiry": "qwe",
+      "cvv": "www",
+      "amount": 349.97
     }
   ]
 }

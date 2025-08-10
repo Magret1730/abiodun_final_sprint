@@ -56,10 +56,10 @@ const ProductDetails = () => {
         <img src={product.image} alt={product.name} className="product-details__image" />
         <div className="product-details__info">
           <h2 className="product-details__name">{product.name}</h2>
-          <p className="product-details__price">{product.price}</p>
-          <p className="product-details__description">{product.description}</p>
-          <p className="product-details__quantity">{product.quantity}</p>
-          <p className="product-details__category">{product.category}</p>
+          <p className="product-details__price">${product.price}</p>
+          <p className="product-details__description"><strong>Description: </strong> {product.description}</p>
+          <p className="product-details__quantity"><strong> Quantity:</strong> {product.quantity}</p>
+          <p className="product-details__category"><strong> Category:</strong> {product.category}</p>
           <button onClick={handleAddToCart} className="product-details__add-to-cart">Add to Cart</button>
         </div>
       </div>

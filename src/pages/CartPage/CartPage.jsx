@@ -87,7 +87,7 @@ const CartPage = () => {
 
   return (
     <div className="cart">
-      <h1>Your Cart</h1>
+      <h1 className="cart__title">Your Cart</h1>
       <table className="cart__table">
         <thead>
           <tr>
@@ -105,7 +105,7 @@ const CartPage = () => {
                 <Link to={`/products/${item.id}`} className="cart__item-link">
                   <img src={item.image} alt={item.name} className="cart__item-image" />
                 </Link>
-                <span>{item.name}</span>
+                <span className="cart__item-name">{item.name}</span>
               </td>
               <td>
                 <div className="cart__qty-controls">

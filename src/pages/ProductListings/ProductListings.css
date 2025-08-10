@@ -1,6 +1,7 @@
 .product-listings {
     padding: 16px;
     background-color: #F9FAFB;
+    margin-top: 5rem;
 }
 .product-listings__title {
     font-size: 1.5em;
