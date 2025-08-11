@@ -138,6 +138,7 @@
 .cart__empty {
   text-align: center;
   padding: 2rem;
+  margin-top: 5rem;
 }
 
 .cart__empty-title {
@@ -145,7 +146,7 @@
   margin-bottom: 1rem;
 }
 
-.cart__empty-message {
+.cart__empty-link {
   text-align: center;
   padding: 1rem;
   color: #777;

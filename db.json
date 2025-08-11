@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Wireless Bluetooth Headphones",
       "price": 79.99,
-      "quantity": 9,
+      "quantity": 6,
       "image": "/images/Wireless_Bluetooth_Headphones.avif",
       "description": "High-quality over-ear Bluetooth headphones with noise cancellation.",
       "category": "Electronics"
@@ -22,7 +22,7 @@
       "id": "3",
       "name": "Classic Leather Wallet",
       "price": 49.99,
-      "quantity": 21,
+      "quantity": 20,
       "image": "/images/Classic_Leather_Wallet.avif",
       "description": "Genuine leather wallet with multiple card slots and ID window.",
       "category": "Accessories"
@@ -40,7 +40,7 @@
       "id": "5",
       "name": "Running Shoes",
       "price": 89.99,
-      "quantity": 15,
+      "quantity": 14,
       "image": "/images/Running_Shoes.avif",
       "description": "Lightweight running shoes with breathable mesh and cushioned sole.",
       "category": "Footwear"
@@ -58,7 +58,7 @@
       "id": "7",
       "name": "Portable Bluetooth Speaker",
       "price": 39.99,
-      "quantity": 25,
+      "quantity": 24,
       "image": "/images/Portable_Bluetooth_Speaker.avif",
       "description": "Compact speaker with deep bass and long battery life.",
       "category": "Electronics"
@@ -67,7 +67,7 @@
       "id": "8",
       "name": "Fitness Tracker Band",
       "price": 59.99,
-      "quantity": 30,
+      "quantity": 28,
       "image": "/images/Fitness_Tracker_Band.avif",
       "description": "Tracks steps, calories, heart rate, and sleep patterns.",
       "category": "Wearables"
@@ -85,7 +85,7 @@
       "id": "10",
       "name": "Ergonomic Office Chair",
       "price": 149.99,
-      "quantity": 6,
+      "quantity": 5,
       "image": "/images/Ergonomic_Office_Chair.avif",
       "description": "Comfortable chair with lumbar support and adjustable height.",
       "category": "Furniture"
@@ -94,7 +94,7 @@
       "id": "11",
       "name": "Mechanical Gaming Keyboard",
       "price": 99.99,
-      "quantity": 12,
+      "quantity": 11,
       "image": "/images/Mechanical_Gaming_Keyboard.avif",
       "description": "RGB backlit mechanical keyboard with anti-ghosting keys.",
       "category": "Computers"
@@ -103,7 +103,7 @@
       "id": "12",
       "name": "Noise Cancelling Earbuds",
       "price": 59.99,
-      "quantity": 18,
+      "quantity": 17,
       "image": "/images/Noise_Cancelling_Earbuds.avif",
       "description": "True wireless earbuds with active noise cancellation.",
       "category": "Electronics"
@@ -190,32 +190,25 @@
       "category": "Fitness"
     }
   ],
-  "cart": [
-    {
-      "id": "1",
-      "name": "Wireless Bluetooth Headphones",
-      "price": 79.99,
-      "quantity": 1,
-      "image": "/images/Wireless_Bluetooth_Headphones.avif",
-      "description": "High-quality over-ear Bluetooth headphones with noise cancellation.",
-      "category": "Electronics"
-    },
-    {
-      "id": "2",
-      "name": "Smartwatch Series 5",
-      "price": 199.99,
-      "quantity": 6,
-      "image": "/images/Smartwatch_Series_5.avif",
-      "description": "Water-resistant smartwatch with heart rate monitor and GPS.",
-      "category": "Wearables"
-    }
-  ],
+  "cart": [],
   "contact": [
     {
       "id": "3726",
       "name": "huyg",
       "email": "hjy",
       "message": "hytg"
+    },
+    {
+      "id": "7ab1",
+      "name": "Magret",
+      "email": "a@b.ca",
+      "message": "Good Job. You did your best. So proud of you."
+    },
+    {
+      "id": "477b",
+      "name": "Magret",
+      "email": "a@b.cc",
+      "message": "GOod job Magret. I'm so proud of you."
     }
   ],
   "paymentDetails": [
@@ -234,6 +227,30 @@
       "expiry": "qwe",
       "cvv": "www",
       "amount": 349.97
+    },
+    {
+      "id": "24b5",
+      "name": "Magret",
+      "cardNumber": "1234567890",
+      "expiry": "01/25",
+      "cvv": "111",
+      "amount": 1439.91
+    },
+    {
+      "id": "047c",
+      "name": "Magret",
+      "cardNumber": "123456",
+      "expiry": "11/30",
+      "cvv": "111",
+      "amount": 189.97
+    },
+    {
+      "id": "00a2",
+      "name": "Magret",
+      "cardNumber": "1111111",
+      "expiry": "1111",
+      "cvv": "123",
+      "amount": 309.97
     }
   ]
 }
