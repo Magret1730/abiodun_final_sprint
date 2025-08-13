@@ -62,6 +62,7 @@ The project includes some unit tests used to test various components using **Rea
 Example test coverage:
 - Checkout page
 - About page
+- Payment page
 
 ---
 
